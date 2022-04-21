@@ -1,0 +1,80 @@
+<div class="ranks-container">
+    <div *ngIf="rankInfo && currentState === 1" class="rank-info rank-info-1 animate__animated animate__fadeIn">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <button>upgrade</button>
+    </div>
+    <div *ngIf="rankInfo && currentState === 2" class="rank-info rank-info-2 animate__animated animate__fadeIn">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+        <button>upgrade</button>
+    </div>
+    <div *ngIf="rankInfo && currentState === 3" class="rank-info rank-info-3 animate__animated animate__fadeIn">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+        <button>upgrade</button>
+    </div>
+    <div *ngIf="rankInfo && currentState === 4" class="rank-info rank-info-4 animate__animated animate__fadeIn">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+    </div>
+    <div *ngIf="currentState === 1" class="tech-line one-line animate__animated animate__slideInRight">
+        <span [className]="rankDisplay ? 'show animate__animated animate__flash' : ''"><b style="margin-right:.3rem">RANK</b>01</span>
+    </div>
+    <div *ngIf="currentState === 2" class="tech-line two-line animate__animated animate__slideInRight">
+        <span [className]="rankDisplay ? 'show animate__animated animate__flash' : ''"><b style="margin-right:.3rem">RANK</b>02</span>
+    </div>
+    <div *ngIf="currentState === 3" class="tech-line three-line animate__animated animate__slideInRight">
+        <span [className]="rankDisplay ? 'show animate__animated animate__flash' : ''"><b style="margin-right:.3rem">RANK</b>03</span>
+    </div>
+    <div *ngIf="currentState === 4" class="tech-line four-line animate__animated animate__slideInRight">
+        <span [className]="rankDisplay ? 'show animate__animated animate__flash' : ''"><b style="margin-right:.3rem">RANK</b>04</span>
+    </div>
+
+    <div [ngClass]="
+        currentState === 1 ? 'fix-1' : ' down-1'
+        " class="rank-block rank-block-one floating_4 floating-soft">
+        <i [ngClass]="
+        (currentState === 1 ? 'rank-01' : 'rank-01-off')
+        " class="rank item" (click)="switch(1)"></i>
+    </div>
+
+    <div [ngClass]="
+        (currentState === 1 ? ' up-2' : ' ')
+        + ('') +
+        (currentState === 2 ? ' fix-2' : ' ')
+        + ('') +
+        (currentState === 3 ? ' down-2' : ' ')
+        + ('') +
+        (currentState === 4 ? ' down-2' : ' ')
+
+        " class="rank-block rank-block-two floating_2 floating-soft">
+        <i [ngClass]="
+        currentState === 2 ? 'rank-02' : 'rank-02-off'
+        + ''
+        " class="rank item" (click)="switch(2)"></i>
+    </div>
+
+    <div [ngClass]="
+        (currentState === 1 ? ' up-3' : ' ')
+        + ('') +
+        (currentState === 2 ? ' up-3' : ' ')
+        + ('') +
+        (currentState === 3 ? ' fix-3' : ' ')
+        + ('') +
+        (currentState === 4 ? ' down-3' : ' ')
+
+        " class="rank-block rank-block-three floating_4 floating">
+        <i [ngClass]="
+        currentState === 3 ? 'rank-03' : 'rank-03-off'
+        + ''
+        " class="rank item" (click)="switch(3)"></i>
+    </div>
+
+    <div [ngClass]="
+          currentState === 4 ? 'fix-4' : ' up-4'
+          " class="rank-block rank-block-four floating_3 floating-soft">
+        <i [ngClass]="
+        currentState === 4 ? 'rank-04' : 'rank-04-off'
+        " class="rank item" (click)="switch(4)"></i>
+    </div>
+</div>

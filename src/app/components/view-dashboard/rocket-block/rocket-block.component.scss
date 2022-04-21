@@ -1,0 +1,46 @@
+.rocket-block {
+    padding: 1rem;
+    position: relative;
+    min-height: 240px;
+    .rocket {
+        background-image: url('../../../icons/rocket.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        height: 245px;
+        width: 165px;
+        position: absolute;
+        bottom: 0px;
+        right: -5px;
+    }
+    .slogan {
+        color: #030822;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        line-height: 24px;
+    }
+    button {
+        background-color: #030822;
+        color: #efefef;
+        text-transform: uppercase;
+        border-radius: 36rem;
+        border: 2px solid #efefef;
+        padding: 1rem 1.5rem;
+        position: absolute;
+        left: 10px;
+        bottom: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        &:hover {
+            color: #030822;
+            background-color: #efefef;
+            border-color: #030822;
+            border: 2px solid #030822;
+            transition: all .3s;
+        }
+    }
+}

@@ -1,0 +1,215 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: calc(100vh - 300px);
+}
+
+$one: 0px;
+$two: 50px;
+$three: 100px;
+$four: 150px;
+.ranks-container {
+    position: relative;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .rank-block {
+        right: 0;
+        .rank {
+            display: flex;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 290px;
+            height: 252px;
+            cursor: pointer;
+        }
+        .rank-01 {
+            background-image: url('../../../icons/ranks/1-on.png');
+        }
+        .rank-02 {
+            background-image: url('../../../icons/ranks/2-on.png');
+        }
+        .rank-03 {
+            background-image: url('../../../icons/ranks/3-on.png');
+        }
+        .rank-04 {
+            background-image: url('../../../icons/ranks/4-on.png');
+        }
+        .rank-01-off {
+            background-image: url('../../../icons/ranks/1-off.png')!important;
+            transition: all .2s;
+            &:hover {
+                background-image: url('../../../icons/ranks/1-hover.png')!important;
+                transition: all .6s;
+            }
+        }
+        .rank-02-off {
+            background-image: url('../../../icons/ranks/2-off.png')!important;
+            transition: all .2s;
+            &:hover {
+                background-image: url('../../../icons/ranks/2-hover.png')!important;
+                transition: all .6s;
+            }
+        }
+        .rank-03-off {
+            background-image: url('../../../icons/ranks/3-off.png')!important;
+            transition: all .2s;
+            &:hover {
+                background-image: url('../../../icons/ranks/3-hover.png')!important;
+                transition: all .6s;
+            }
+        }
+        .rank-04-off {
+            background-image: url('../../../icons/ranks/4-off.png')!important;
+            transition: all .2s;
+            &:hover {
+                background-image: url('../../../icons/ranks/4-hover.png')!important;
+                transition: all .6s;
+            }
+        }
+    }
+    .rank-block-one {
+        // bottom: $one;
+        position: fixed;
+        max-height: 0;
+    }
+    .rank-block-two {
+        // bottom: $two;
+        max-height: 0;
+        position: fixed;
+    }
+    .rank-block-three {
+        // bottom: $three;
+        max-height: 0;
+        position: fixed;
+    }
+    .rank-block-four {
+        // bottom: $four;
+        max-height: 0;
+        position: fixed;
+    }
+    .down-1 {
+        // bottom: calc($one - 50px);
+        bottom: 355px;
+    }
+    .down-2 {
+        // bottom: calc($two - 50px);
+        bottom: 405px;
+    }
+    .down-3 {
+        // bottom: calc($three - 50px);
+        bottom: 460px;
+    }
+    .down-4 {
+        bottom: calc($four + 200px);
+    }
+    .up-1 {
+        top: calc($one + 100px);
+    }
+    .up-2 {
+        // top: calc($two + 50px);
+        top: 285px;
+    }
+    .up-3 {
+        // top: calc($three - 50px);
+        top: 230px;
+    }
+    .up-4 {
+        // top: calc($four - 150px);
+        top: 170px;
+    }
+    .fix-1 {
+        bottom: 425px;
+    }
+    .fix-3 {
+        top: 308px;
+    }
+    .fix-2 {
+        top: 370px;
+    }
+    .fix-4 {
+        top: 240px;
+    }
+    .show {
+        display: flex!important;
+    }
+    .animate__flash {
+        -webkit-animation-duration: .2s;
+        animation-duration: .2s;
+    }
+    .tech-line {
+        background-image: url('../../../icons/ranks/tech-line.png');
+        display: flex;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 170px;
+        height: 22px;
+        position: fixed;
+        right: 260px;
+        span {
+            display: none;
+            position: absolute;
+            left: -75px;
+            top: -6px;
+        }
+    }
+    .one-line {
+        bottom: 290px;
+    }
+    .two-line {
+        bottom: 345px;
+    }
+    .three-line {
+        bottom: 410px;
+    }
+    .four-line {
+        bottom: 480px;
+    }
+}
+
+.rank-info {
+    max-width: 220px;
+    position: absolute;
+    right: 252px;
+    p {
+        color: #030822;
+        font-size: 16px;
+    }
+    button {
+        background-color: #030822;
+        font-size: 12px;
+        border-radius: 50px;
+        padding: 0.3rem 0.8rem;
+        color: #efefef;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all 0.5s;
+        border: 2px solid #efefef;
+        &:hover {
+            background-color: #efefef;
+            border: 2px solid #030822;
+            color: #030822;
+            transition: all .2s;
+        }
+    }
+}
+
+.rank-info-1 {
+    bottom: -145px;
+}
+
+.rank-info-2 {
+    bottom: -225px;
+}
+
+.rank-info-3 {
+    bottom: -160px;
+}
+
+.rank-info-4 {
+    bottom: -55px;
+}

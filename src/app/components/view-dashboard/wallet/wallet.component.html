@@ -1,0 +1,47 @@
+<div class="wallet flex-column">
+    <span class="title">Wallet<br/>Balance</span>
+    <div class="d-flex justify-content-between">
+        <div class="d-flex" style="width: 170px;margin-right: 2rem;margin-top: 1.5rem;">
+            <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="doughnutChartOptions"></canvas>
+        </div>
+        <div class="body d-flex flex-column">
+            <div class="input-big">
+                <div class="currency">
+                    <span class="opsy">$opsy</span>
+                </div>
+                <span class="token-amount">824548.2356</span>
+            </div>
+
+            <div class="input-big">
+                <div class="currency">
+                    <span class="ogld">$ogld</span>
+                </div>
+                <span class="token-amount">23245.5654</span>
+            </div>
+
+            <div class="input-big">
+                <div class="currency">
+                    <span class="avax">$avax</span>
+                </div>
+                <span class="token-amount">1.3654</span>
+            </div>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <div class="foot">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <span class="title">Total rewards</span>
+            <div class="little-rounded">
+                <span class="currency">$avax</span>
+                <span class="price">1.6</span>
+            </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <span class="title">Received rewards</span>
+            <div class="little-rounded">
+                <span class="currency">$avax</span>
+                <span class="price">4.3</span>
+            </div>
+        </div>
+    </div>
+</div>

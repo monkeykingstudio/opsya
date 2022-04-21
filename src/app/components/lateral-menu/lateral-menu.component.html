@@ -1,0 +1,95 @@
+<div class="lateral-menu">
+    <div class="logo-container">
+        <div class="display-logo">
+            <div class="logo"></div>
+            <span>opsya .</span>
+        </div>
+    </div>
+    <div class="menu d-flex flex-column">
+        <div [ngClass]="[
+        activeItem === 'dashboard' ? 'highlight-dashboard' : '',
+        activeItem === 'defi' ? 'highlight-defi' : '',
+        activeItem === 'insurance' ? 'highlight-insurance' : '',
+        activeItem === 'investment' ? 'highlight-investment' : '',
+        activeItem === 'corporate' ? 'highlight-corporate' : ''
+        ]" class="animate__animated animate__fadeInRight highlight"></div>
+        <div (click)="switchItem('dashboard')" [ngClass]="activeItem === 'dashboard' ? 'active' : 'innactive hover-grad'" class="item">
+            <span>dashboard</span>
+            <i [ngClass]="activeItem === 'dashboard' ? 'dashboard-icon-on icon-on animate__animated animate__flipInY' : 'dashboard-icon icon'"></i>
+        </div>
+        <div (click)="switchItem('defi')" [ngClass]="activeItem === 'defi' ? 'active' : 'innactive hover-grad'" class="item">
+            <span>defi</span>
+            <i [ngClass]="activeItem === 'defi' ? 'defi-icon-on icon-on animate__animated animate__flipInY' : 'defi-icon icon'"></i>
+        </div>
+        <div (click)="switchItem('insurance')" [ngClass]="activeItem === 'insurance' ? 'active' : 'innactive hover-grad'" class="item">
+            <span>insurance</span>
+            <i [ngClass]="activeItem === 'insurance' ? 'insurance-icon-on icon-on animate__animated animate__flipInY' : 'insurance-icon icon'"></i>
+        </div>
+        <div (click)="switchItem('investment')" [ngClass]="activeItem === 'investment' ? 'active' : 'innactive hover-grad'" class="item">
+            <span>investment</span>
+            <i [ngClass]="activeItem === 'investment' ? 'investment-icon-on icon-on animate__animated animate__flipInY' : 'investment-icon icon'"></i>
+        </div>
+        <div (click)="switchItem('corporate')" [ngClass]="activeItem === 'corporate' ? 'active' : 'innactive hover-grad'" class="item">
+            <span>corporate</span>
+            <i [ngClass]="activeItem === 'corporate' ? 'corporate-icon-on icon-on animate__animated animate__flipInY' : 'corporate-icon icon'"></i>
+        </div>
+
+        <div class="tokens">
+            <div class="separator"></div>
+            <div style="padding: 0 0.5rem;min-height: 60px;" class="align-items-center justify-content-between w-100 d-flex">
+                <div tooltip="OPSY Token" placement="top" appHoverMenu="animate__rubberBand" class="opsy animate__animated"></div>
+                <span style="
+                      font-weight: 700;
+                      left: 0;
+                      background-color: #0a102f;
+                      border-radius: 20px;
+                      margin-left: 0.5rem;
+                      min-width: 130px;
+                      padding: 0.4rem 1rem;
+                      display: flex;
+                      justify-content: flex-end;
+                      border-bottom: 2px solid #02061a;
+                      align-items: center;
+                      border-top: 2px solid #071144;" class="position-relative">$0.3925</span>
+            </div>
+            <div class="separator"></div>
+            <div style="padding: 0 0.5rem;min-height: 60px;" class="align-items-center justify-content-between w-100 d-flex">
+                <div tooltip="OGLD Token" placement="top" appHoverMenu="animate__rubberBand" class="ogld animate__animated"></div>
+                <span title="OGLD Token" style="
+                      font-weight: 700;
+                      left: 0;
+                      background-color: #0a102f;
+                      border-radius: 20px;
+                      margin-left: 0.5rem;
+                      min-width: 130px;
+                      padding: 0.4rem 1rem;
+                      display: flex;
+                      justify-content: flex-end;
+                      border-bottom: 2px solid #02061a;
+                      align-items: center;
+                      border-top: 2px solid #071144;" class="position-relative">$135.2512</span>
+            </div>
+            <div class="separator"></div>
+        </div>
+        <div class="social-cont">
+            <!-- <div class="separator"></div> -->
+            <div class="social">
+                <div appHoverMenu="animate__tada" class="social-icon animate__animated">
+                    <i class="twitter d-flex"></i>
+                </div>
+                <div appHoverMenu="animate__tada" class="social-icon animate__animated">
+                    <i class="telegram d-flex"></i>
+                </div>
+                <div appHoverMenu="animate__tada" class="social-icon animate__animated">
+                    <i class="medium d-flex"></i>
+                </div>
+                <div appHoverMenu="animate__tada" class="social-icon animate__animated">
+                    <i class="dis d-flex"></i>
+                </div>
+                <div appHoverMenu="animate__tada" class="social-icon animate__animated">
+                    <i class="gitbook d-flex"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

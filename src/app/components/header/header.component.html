@@ -1,0 +1,41 @@
+<div class="header">
+    <div *ngIf="userPanel" appClickoutside (clickOutside)="close($event)" class="test">
+        <app-user-panel [show]="userPanel"></app-user-panel>
+    </div>
+
+    <div class="header-nav">
+        <div class="left-block">
+            <div class="navigation-container">
+                <a href="">ecosystem overview </a><i class="top-menu-icon"></i>
+
+            </div>
+            <div class="navigation-container">
+                <a routerLink="/profile">profile </a><i class="top-menu-icon"></i>
+
+            </div>
+        </div>
+        <div class="right-block">
+            <div class="d-flex align-items-center">
+                <div class="d-flex position-relative">
+                    <span tooltip="Ecosystem's Treasury" placement="bottom" class="tvl"><span>TREASURY</span> $ 4512.4522</span>
+                    <div class="notif"></div>
+                    <span class="animate__animated animate__infinite animate__heartBeat notif-circle" style="
+                      color: #efefef;
+                      position: absolute;
+                      font-weight: 700;
+                    ">3</span>
+                </div>
+                <div tooltip="You are not insured." placement="bottom" class="shield-grey">
+                    <i class="animate__animated animate__infinite animate__heartBeat alert"></i>
+                </div>
+                <div class="neumomorph-1 avatar">
+                    <div class="avatar-test"></div>
+                </div>
+                <div (click)="toggleUserPanel($event)" style="cursor: pointer;" class="d-flex align-items-center">
+                    <span class="user-name">França Spicot</span>
+                    <i class="caret"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

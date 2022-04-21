@@ -1,0 +1,62 @@
+<div class="row content">
+    <div class="col-md-7">
+        <div class="absolute-container">
+            <div class="floating_3 floating-soft one-cont">
+                <div class="item one"></div>
+            </div>
+
+            <div class="floating_1 floating two-cont">
+                <div class="item two"></div>
+            </div>
+
+            <div class="floating_3 floating three-cont">
+                <div class="item three"></div>
+            </div>
+
+            <div class="floating_5 floating-soft four-cont">
+                <div class="item four"></div>
+            </div>
+
+            <div class="floating_2 floating five-cont">
+                <div class="item five"></div>
+            </div>
+
+            <div class="floating_6 floating six-cont">
+                <div class="item six"></div>
+            </div>
+
+            <div class="floating_1 floating seven-cont">
+                <div class="item seven"></div>
+            </div>
+
+            <div class="floating_3 floating-extra-soft height-cont">
+                <div class="item height"></div>
+            </div>
+
+            <div class="floating_5 floating nine-cont">
+                <div class="item nine"></div>
+            </div>
+
+            <div class="floating_left floating-soft">
+                <div class="item left"></div>
+            </div>
+            <div class="floating_right floating-soft">
+                <div class="item right"></div>
+            </div>
+
+            <div class="treasury-block">
+                <span class="treasury-title">TOTAL VALUE LOCKED</span>
+                <span class="treasury btn-shine">$ {{ this.treasury | number: '.2' }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <app-wallet></app-wallet>
+    </div>
+    <div class="col-lg-9 col-md-8">
+        <app-tokens-graph></app-tokens-graph>
+    </div>
+    <div class="col-lg-3 col-md-4">
+        <app-rocket-block></app-rocket-block>
+    </div>
+</div>

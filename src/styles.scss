@@ -1,1 +1,442 @@
-/* You can add global styles to this file, and also import other style files */
+    @import '~bootstrap/dist/css/bootstrap.min.css';
+    @import '~animate.css/animate.min.css';
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica', sans-serif;
+        background: #efefef;
+    }
+    
+    body {
+        background-color: #efefef;
+    }
+    
+    span,
+    p,
+    input {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .display-none {
+        display: none;
+    }
+    
+    .neumomorph-1 {
+        border-radius: 10px;
+        background: #efefef;
+        box-shadow: 5px 5px 9px #cbcbcb, -2px -2px 4px #ffffff;
+    }
+    
+    .avatar-test {
+        background-image: url('./app/icons/avatars/011-man-2.svg');
+        background-size: contain;
+        height: 45px;
+        width: 45px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 10px;
+    }
+    
+    .treasury-block {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 355px;
+        left: 120px;
+        top: 145px;
+        .treasury-title {
+            font-family: 'poppins';
+            font-weight: 400;
+            font-size: 22px
+        }
+        .treasury {
+            font-family: 'poppins';
+            font-weight: 700;
+            font-size: 44px;
+            align-self: flex-end;
+            line-height: 40px;
+        }
+    }
+    
+    .patreon {
+        width: 629px;
+        height: 428px;
+        display: flex;
+        background-image: url('./app/icons/patreon.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .absolute-container {
+        position: relative;
+        z-index: 20;
+        width: 629px;
+        height: 428px;
+        display: flex;
+        margin: auto;
+    }
+    
+    .left {
+        background-image: url('./app/icons/left.png');
+        height: 271px;
+        width: 259px;
+        bottom: 0;
+        position: relative;
+    }
+    
+    .right {
+        background-image: url('./app/icons/right.png');
+        height: 304px;
+        width: 295px;
+        position: relative;
+        top: 36px;
+        left: 35px;
+    }
+    
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven,
+    .height,
+    .nine {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        // position: absolute;
+    }
+    
+    .one-cont {
+        position: absolute;
+        top: 115px;
+        left: 265px;
+        .one {
+            background-image: url('./app/icons/left-parts/1.png');
+            height: 9px;
+            width: 9px;
+        }
+    }
+    
+    .two-cont {
+        position: absolute;
+        top: 55px;
+        left: 535px;
+        .two {
+            background-image: url('./app/icons/right-parts/2.png');
+            height: 30px;
+            width: 15px;
+        }
+    }
+    
+    .three-cont {
+        position: absolute;
+        top: 107px;
+        left: 580px;
+        .three {
+            background-image: url('./app/icons/right-parts/3.png');
+            height: 11px;
+            width: 10px;
+        }
+    }
+    
+    .four-cont {
+        position: absolute;
+        top: 295px;
+        left: 315px;
+        .four {
+            background-image: url('./app/icons/right-parts/4.png');
+            height: 6px;
+            width: 5px;
+        }
+    }
+    
+    .five-cont {
+        position: absolute;
+        top: 275px;
+        left: 195px;
+        .five {
+            background-image: url('./app/icons/left-parts/5.png');
+            height: 10px;
+            width: 10px;
+        }
+    }
+    
+    .six-cont {
+        position: absolute;
+        top: 245px;
+        left: 220px;
+        .six {
+            background-image: url('./app/icons/left-parts/6.png');
+            height: 17px;
+            width: 16px;
+        }
+    }
+    
+    .seven-cont {
+        position: absolute;
+        left: -5px;
+        top: 135px;
+        .seven {
+            background-image: url('./app/icons/left-parts/7.png');
+            height: 10px;
+            width: 10px;
+        }
+    }
+    
+    .height-cont {
+        position: absolute;
+        left: -5px;
+        top: 125px;
+        .height {
+            background-image: url('./app/icons/left-parts/8.png');
+            height: 6px;
+            width: 8px;
+        }
+    }
+    
+    .nine-cont {
+        position: absolute;
+        top: 135px;
+        left: 435px;
+        .nine {
+            background-image: url('./app/icons/right-parts/9.png');
+            height: 11px;
+            width: 15px;
+        }
+    }
+    
+    .btn-shine {
+        color: #030822;
+        background: linear-gradient(to right, #07103ee6 0, #030822 100%, #1d1d1d00 0%);
+        background-position: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 1.5s infinite cubic-bezier(0.62, -0.14, 0.34, 0.5);
+        animation-fill-mode: forwards;
+        -webkit-text-size-adjust: none;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    
+    @keyframes shine {
+        0% {
+            background-position: 0;
+        }
+        60% {
+            background-position: 150px;
+        }
+        100% {
+            background-position: 300px;
+        }
+    }
+    
+    .floating_left {
+        $duration: 6s!important;
+        >.item {
+            animation-duration: $duration!important;
+        }
+        &:after {
+            content: "";
+            margin: -80px auto 0;
+            width: 100px;
+            height: 40px;
+            display: block;
+            border-radius: 50%;
+            box-shadow: 0 100px 50px -5px rgba(0, 0, 0, 0.36);
+            animation-name: shadowing;
+            animation-duration: $duration;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+    }
+    
+    .floating_right {
+        $duration: 7.5!important;
+        >.item {
+            animation-duration: $duration!important;
+            animation-delay: .5s!important;
+        }
+        &:after {
+            content: "";
+            margin: -80px auto 0;
+            width: 100px;
+            height: 40px;
+            display: block;
+            border-radius: 50%;
+            box-shadow: 0 100px 50px -5px rgba(0, 0, 0, 0.36);
+            animation-name: shadowing;
+            animation-duration: $duration;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+    }
+    
+    .floating_1 {
+        $duration: 3s!important;
+        >.item {
+            animation-duration: $duration!important;
+        }
+    }
+    
+    .floating_2 {
+        $duration: 2.5s!important;
+        >.item {
+            animation-duration: $duration!important;
+            animation-delay: 1.2s!important;
+        }
+    }
+    
+    .floating_3 {
+        $duration: 2s!important;
+        >.item {
+            animation-duration: $duration!important;
+            animation-delay: .3s!important;
+        }
+    }
+    
+    .floating_4 {
+        $duration: 2.5s!important;
+        >.item {
+            animation-duration: $duration!important;
+            animation-delay: .5s!important;
+        }
+    }
+    
+    .floating_5 {
+        $duration: 3s!important;
+        >.item {
+            animation-duration: $duration!important;
+            animation-delay: 1.7s!important;
+        }
+    }
+    
+    .floating_6 {
+        $duration: 3.5!important;
+        >.item {
+            animation-duration: $duration!important;
+            animation-delay: .8s!important;
+        }
+    }
+    
+    .floating {
+        $duration: 3s;
+        >.item {
+            animation-name: floating;
+            animation-duration: $duration;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        &:after {
+            content: "";
+            margin: -80px auto 0;
+            width: 20px;
+            height: 5px;
+            display: block;
+            border-radius: 50%;
+            box-shadow: 0 20px 5px -5px rgba(0, 0, 0, 0.36);
+            animation-name: shadowing;
+            animation-duration: $duration;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+    }
+    
+    .floating-soft {
+        $duration: 3s;
+        >.item {
+            animation-name: floating-soft;
+            animation-duration: $duration;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        &:after {
+            content: "";
+            margin: -80px auto 0;
+            width: 20px;
+            height: 5px;
+            display: block;
+            border-radius: 50%;
+            box-shadow: 0 20px 5px -5px rgba(0, 0, 0, 0.36);
+            animation-name: shadowing;
+            animation-duration: $duration;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+    }
+    
+    .floating-extra-soft {
+        $duration: 7s;
+        >.item {
+            animation-name: floating-extra-soft;
+            animation-duration: $duration;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        &:after {
+            content: "";
+            margin: -80px auto 0;
+            width: 20px;
+            height: 5px;
+            display: block;
+            border-radius: 50%;
+            box-shadow: 0 20px 5px -5px rgba(0, 0, 0, 0.36);
+            animation-name: shadowing;
+            animation-duration: $duration;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+    }
+    
+    @keyframes shadowing {
+        from {
+            transform: scale(1, 1);
+        }
+        55% {
+            transform: scale(1.25, 1);
+        }
+        to {
+            transform: scale(1, 1);
+        }
+    }
+    
+    @keyframes floating {
+        from {
+            transform: translate(0, 0px);
+        }
+        55% {
+            transform: translate(0, 15px);
+        }
+        to {
+            transform: translate(0, 0px);
+        }
+    }
+    
+    @keyframes floating-soft {
+        from {
+            transform: translate(0, 0px);
+        }
+        55% {
+            transform: translate(0, 12px);
+        }
+        to {
+            transform: translate(0, 0px);
+        }
+    }
+    
+    @keyframes floating-extra-soft {
+        from {
+            transform: translate(0, 0px);
+        }
+        55% {
+            transform: translate(0, 6px);
+        }
+        to {
+            transform: translate(0, 0px);
+        }
+    }
