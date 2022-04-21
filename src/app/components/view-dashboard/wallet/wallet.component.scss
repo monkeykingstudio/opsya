@@ -1,0 +1,107 @@
+:host {}
+
+.wallet {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(14, 32, 71);
+    background: linear-gradient(to bottom right, rgba(14, 32, 71, 1) 0%, rgba(3, 8, 34, 0.89) 100%), linear-gradient(336deg, rgba(79, 10, 206, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    box-shadow: 4px 4px 11px 2px rgb(17 17 56 / 80%);
+    .title {
+        color: #efefef;
+        font-weight: 900;
+        font-size: 33px;
+        line-height: 30px;
+    }
+    .opsy {
+        background-color: #02c6c6;
+        border-radius: 35px;
+        padding: 5px 10px;
+    }
+    .ogld {
+        background-color: #e9d000;
+        border-radius: 35px;
+        padding: 5px 10px;
+    }
+    .avax {
+        background-color: #e84142;
+        border-radius: 35px;
+        padding: 5px 10px;
+    }
+    .input-big {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+        border-radius: 35px;
+        background-color: #0e2047;
+        padding: 5px;
+        box-shadow: 0px 5px 10px #091434 inset, 0px 3px 5px -2px #1a3465;
+        min-width: 215px;
+        max-width: 290px;
+        &:first-child {
+            margin: 0!important;
+        }
+        .token-amount {
+            color: #efefef;
+            font-weight: 600;
+            font-size: 22px;
+            margin-right: 0.5rem;
+        }
+        .currency {
+            display: flex;
+            border-radius: 35px;
+            padding: .5rem;
+            align-items: center;
+            justify-content: flex-start;
+            span {
+                color: #efefef;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+    .separator {
+        margin-top: 1rem;
+        height: 4px;
+        width: 100%;
+        background-color: #0b1227;
+        border-bottom: 2px solid #222357;
+    }
+    .foot {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        .title {
+            color: #efefef;
+            font-size: 15px;
+            margin: 0;
+        }
+        .little-rounded {
+            background-color: #efefef;
+            padding: 0.3rem 0.3rem;
+            border-radius: 30px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .currency {
+                background-color: #e84142;
+                color: #efefef;
+                padding: 0.2rem 0.5rem;
+                border-radius: 30px;
+            }
+            .price {
+                color: #e84142;
+                font-weight: 600;
+                margin-left: 1rem;
+                margin-right: 0.3rem;
+                font-size: 18px;
+            }
+        }
+    }
+}

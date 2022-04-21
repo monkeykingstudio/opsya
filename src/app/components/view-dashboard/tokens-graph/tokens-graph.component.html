@@ -1,0 +1,83 @@
+<div class="tokens-graph neumomorph-1">
+    <div style="padding-right: 0;padding-left: 0;" class="col-md-4">
+        <div class="blocks">
+            <div [ngClass]="{'activated': tokenGraph === 'opsy'}" (click)="switchOpsy()" class="opsy-block">
+                <div class="w-100 pr-2 d-flex align-items-center justify-content-start">
+                    <div class="opsy-token"></div>
+                    <div class="infos d-flex flex-column flex-grow-1">
+                        <span class="token">opsy</span>
+                        <span class="value">$ {{ opsyPrice | number:'1.0-4' }}</span>
+                    </div>
+                    <div class="indicator">
+                        <i *ngIf="opsyPriceChange > 0" class="opsy-increase"></i>
+                        <i *ngIf="opsyPriceChange === 0" class="opsy-null"></i>
+                        <i *ngIf="opsyPriceChange < 0" class="opsy-decrease"></i>
+                        <span class="opsy">{{opsyPriceChange | number:'1.0-2'}}%</span>
+                    </div>
+                </div>
+            </div>
+            <div [ngClass]="{'activated': tokenGraph === 'ogld'}" (click)="switchOgld()" class="ogld-block">
+                <div class="w-100 pr-2 d-flex align-items-center justify-content-start">
+                    <div class="ogld-token"></div>
+                    <div class="infos d-flex flex-column flex-grow-1">
+                        <span class="token">ogld</span>
+                        <span class="value">$ 0</span>
+                    </div>
+                    <div class="indicator">
+                        <i *ngIf="ogldPriceChange > 0" class="ogld-increase"></i>
+                        <i *ngIf="ogldPriceChange === 0" class="ogld-null"></i>
+                        <i *ngIf="ogldPriceChange < 0" class="ogld-decrease"></i>
+                        <span class="ogld">{{ogldPriceChange | number:'1.0-2'}}%</span>
+                    </div>
+                </div>
+            </div>
+            <div [ngClass]="{'activated': tokenGraph === 'avax'}" (click)="switchAvax()" class="avax-block">
+                <div class="w-100 pr-2 d-flex align-items-center justify-content-start">
+                    <div class="avax-token"></div>
+                    <div class="infos d-flex flex-column flex-grow-1">
+                        <span class="token">avax</span>
+                        <span class="value">$ {{ avaxPrice | number:'1.0-4' }}</span>
+                    </div>
+                    <div class="indicator">
+                        <i *ngIf="avaxPriceChange > 0" class="avax-increase"></i>
+                        <i *ngIf="avaxPriceChange === 0" class="avax-null"></i>
+                        <i *ngIf="avaxPriceChange < 0" class="avax-decrease"></i>
+                        <span class="avax">{{avaxPriceChange | number:'1.0-2'}}%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8 p-0">
+        <div *ngIf="tokenGraph === 'opsy'" style="
+        border-left: 2px solid #fff;
+        align-items: center;
+        justify-content: center;
+        max-height:15rem;
+        padding: 1rem;
+        overflow:hidden" class="d-flex">
+            <span class="opsy-volume">DAILY VOLUME: <span style="font-weight: 900;margin-left:.5rem"> {{opsyVolume30d | number:'1.0-4'}}</span> </span>
+            <canvas class="animate__fadeIn animate__animated" style="border-radius: 0 15px 15px 0;padding: 4rem;" baseChart [data]="opsyTokenChartData" [type]="opsyTokenChartType" [options]="opsyTokenChartOptions"></canvas>
+        </div>
+        <div *ngIf="tokenGraph === 'ogld'" style="
+        border-left: 2px solid #fff;
+        align-items: center;
+        justify-content: center;
+        max-height:15rem;
+        padding: 1rem;
+        overflow:hidden" class="d-flex">
+            <canvas class="animate__fadeIn animate__animated" style="border-radius: 0 15px 15px 0;padding: 4rem;" baseChart [data]="ogldTokenChartData" [type]="ogldTokenChartType" [options]="ogldTokenChartOptions"></canvas>
+        </div>
+        <div *ngIf="tokenGraph === 'avax'" style="
+        border-left: 2px solid #fff;
+        align-items: center;
+        justify-content: center;
+        max-height:15rem;
+        padding: 1rem;
+        overflow:hidden" class="d-flex">
+            <span class="avax-volume">DAILY VOLUME: <span style="font-weight: 900;margin-left:.5rem"> {{avaxVolume30d | number:'1.0-4'}}</span> </span>
+            <canvas class="animate__fadeIn animate__animated" style="border-radius: 0 15px 15px 0;padding: 4rem;" baseChart [data]="avaxTokenChartData" [type]="avaxTokenChartType" [options]="avaxTokenChartOptions"></canvas>
+        </div>
+    </div>
+</div>

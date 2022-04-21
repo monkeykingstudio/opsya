@@ -1,0 +1,363 @@
+.lateral-menu {
+    width: 225px;
+    z-index: 10;
+    position: fixed;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #030822;
+}
+
+.logo-container {
+    height: 100px;
+    background-color: #030822;
+    display: flex;
+    margin-bottom: 2rem;
+    .display-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 1rem;
+        span {
+            text-transform: uppercase;
+            color: #efefef;
+            font-size: 24px;
+            font-weight: 700;
+            margin-left: 1rem;
+        }
+        .logo {
+            background-image: url('../../icons/menu/logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 58px;
+            width: 57px;
+        }
+    }
+}
+
+.opsy {
+    background-image: url('../../icons/menu/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 33px;
+    width: 32px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.ogld {
+    background-image: url('../../icons/menu/ogld.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 33px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.dashboard-icon {
+    background-image: url('../../icons/menu/dashboard.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
+.dashboard-icon-on {
+    background-image: url('../../icons/menu/dashboard-on.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
+.defi-icon {
+    background-image: url('../../icons/menu/defi.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
+.defi-icon-on {
+    background-image: url('../../icons/menu/defi-on.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
+.insurance-icon {
+    background-image: url('../../icons/menu/insurance.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
+.insurance-icon-on {
+    background-image: url('../../icons/menu/insurance-on.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
+.investment-icon {
+    background-image: url('../../icons/menu/investment.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
+.investment-icon-on {
+    background-image: url('../../icons/menu/investment-on.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
+.corporate-icon {
+    background-image: url('../../icons/menu/corporate.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
+.corporate-icon-on {
+    background-image: url('../../icons/menu/corporate-on.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+}
+
+.social-cont {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2.5rem;
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        bottom: 5px;
+        width: 100%;
+        height: 2.5rem;
+        position: relative;
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background-color: transparent;
+            border-radius: 360px;
+            transition: all .3s;
+            cursor: pointer;
+            &:hover {
+                transition: all .5s;
+                background-color: #fff;
+                .twitter {
+                    background-image: url('../../icons/menu/twitter-on.svg');
+                }
+                .medium {
+                    background-image: url('../../icons/menu/medium-on.svg');
+                }
+                .dis {
+                    background-image: url('../../icons/menu/discord-on.svg');
+                }
+                .telegram {
+                    background-image: url('../../icons/menu/telegram-on.svg');
+                }
+                .gitbook {
+                    background-image: url('../../icons/menu/gitbook-on.png');
+                }
+            }
+        }
+        .twitter {
+            background-image: url('../../icons/menu/twitter.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+            transition: all .3s;
+        }
+        .telegram {
+            background-image: url('../../icons/menu/telegram.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+            left: -2px;
+            position: relative;
+        }
+        .dis {
+            background-image: url('../../icons/menu/discord.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 25px;
+            width: 25px;
+            cursor: pointer;
+        }
+        .medium {
+            background-image: url('../../icons/menu/medium.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+        }
+        .gitbook {
+            background-image: url('../../icons/menu/gitbook.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 23px;
+            width: 23px;
+            cursor: pointer;
+        }
+    }
+}
+
+.tokens {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+
+.menu {
+    position: relative;
+    height: calc(100vh - 135px);
+    .separator {
+        height: 5px;
+        width: 100%;
+        background-color: #040b2d;
+        border-bottom: 3px solid #020619;
+    }
+    .empty {
+        &:hover {
+            background-color: #030822!important;
+            cursor: default!important;
+        }
+    }
+    span {
+        position: absolute;
+        left: 20px;
+        color: #efefef;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .icon {
+        position: absolute;
+        right: 22px;
+        top: 22px;
+    }
+    .icon-on {
+        position: absolute;
+        right: 22px;
+        top: 22px;
+    }
+    .animate__fadeInRight {
+        -webkit-animation-duration: .2s;
+        animation-duration: .2s;
+    }
+    .innactive {
+        span {
+            top: 30px;
+        }
+    }
+    .highlight-dashboard {
+        top: 0;
+    }
+    .highlight-defi {
+        top: 80px;
+    }
+    .highlight-insurance {
+        top: 160px;
+    }
+    .highlight-investment {
+        top: 240px;
+    }
+    .highlight-corporate {
+        top: 320px;
+    }
+    .highlight {
+        transition: all, .2s;
+        position: absolute;
+        right: 0;
+        height: 80px;
+        width: 82px;
+        background-color: #efefef;
+        border-radius: 40px 0 0 40px;
+        z-index: 2;
+        &:before {
+            content: "";
+            position: absolute;
+            top: -40px;
+            right: 0px;
+            height: 40px;
+            width: 40px;
+            background: radial-gradient(circle at top left, transparent 70%, #efefef 72%) bottom right/40px 40px no-repeat;
+            z-index: 15;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            right: 0;
+            height: 40px;
+            width: 40px;
+            background: radial-gradient(circle at bottom left, transparent 70%, #efefef 72%) bottom right/40px 40px no-repeat;
+            ;
+            z-index: 15;
+        }
+    }
+    .active {
+        span {
+            top: 30px;
+        }
+        z-index:3
+    }
+    .item {
+        height: 80px;
+        // background-color: #030822;
+        position: relative;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        // transition: all .3s;
+        &:hover {
+            transition: all .5s;
+        }
+    }
+    .hover-grad {
+        &:hover {
+            background: linear-gradient(90deg, rgba(14, 32, 71, 1) 0%, rgba(3, 8, 34, 1) 85%);
+        }
+    }
+}
