@@ -13,7 +13,7 @@
         activeItem === 'investment' ? 'highlight-investment' : '',
         activeItem === 'corporate' ? 'highlight-corporate' : ''
         ]" class="animate__animated animate__fadeInRight highlight"></div>
-        <div (click)="switchItem('dashboard')" [ngClass]="activeItem === 'dashboard' ? 'active' : 'innactive hover-grad'" class="item">
+        <div routerLink="/" (click)="switchItem('dashboard')" [ngClass]="activeItem === 'dashboard' ? 'active' : 'innactive hover-grad'" class="item">
             <span>dashboard</span>
             <i [ngClass]="activeItem === 'dashboard' ? 'dashboard-icon-on icon-on animate__animated animate__flipInY' : 'dashboard-icon icon'"></i>
         </div>
@@ -25,7 +25,7 @@
             <span>insurance</span>
             <i [ngClass]="activeItem === 'insurance' ? 'insurance-icon-on icon-on animate__animated animate__flipInY' : 'insurance-icon icon'"></i>
         </div>
-        <div (click)="switchItem('investment')" [ngClass]="activeItem === 'investment' ? 'active' : 'innactive hover-grad'" class="item">
+        <div routerLink="/investment" (click)="switchItem('investment')" [ngClass]="activeItem === 'investment' ? 'active' : 'innactive hover-grad'" class="item">
             <span>investment</span>
             <i [ngClass]="activeItem === 'investment' ? 'investment-icon-on icon-on animate__animated animate__flipInY' : 'investment-icon icon'"></i>
         </div>

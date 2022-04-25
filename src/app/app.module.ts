@@ -19,6 +19,8 @@ import { RanksComponent } from './components/view-profile/ranks/ranks.component'
 import { ChangeClassDirective } from './directives/change-class.directive';
 import { RocketBlockComponent } from '../app/components/view-dashboard/rocket-block/rocket-block.component';
 import { WalletOverviewComponent } from './components/view-profile/wallet-overview/wallet-overview.component';
+import { ViewInvestmentComponent } from './components/view-investment/view-investment.component';
+import { OgldComponent } from './components/view-investment/ogld/ogld.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { WalletOverviewComponent } from './components/view-profile/wallet-overvi
     RanksComponent,
     ChangeClassDirective,
     RocketBlockComponent,
-    WalletOverviewComponent
+    WalletOverviewComponent,
+    ViewInvestmentComponent,
+    OgldComponent,
   ],
   imports: [
     BrowserModule,
